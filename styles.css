@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Noto Serif SC", serif; */
+  font-family: "Roboto", "Noto Serif SC", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
@@ -179,10 +179,14 @@
   overflow: auto;
   white-space: nowrap;
   margin-bottom: 50px;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 #carousel .slide {
   display: inline-block;
+  scroll-snap-align: center;
 }
 
 #services #buttonLeft {
