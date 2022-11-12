@@ -96,10 +96,10 @@
 #blackCircle {
   background-color: black;
   height: 90vh;
-  width: 60vw;
+  width: 50vw;
   z-index: -1;
-  border-radius: 50%;
-  left: -400px;
+  border-radius: 500px;
+  left: -250px;
   /* margin-top: 150px; */
   position: absolute;
 }
@@ -175,7 +175,7 @@
 #carousel {
   width: 100%;
   height: auto;
-  background-color: #ff0000;
+  background-color: white;
   overflow: auto;
   white-space: nowrap;
   margin-bottom: 50px;
@@ -184,23 +184,80 @@
   scroll-behavior: smooth;
 }
 
+#carousel::-webkit-scrollbar {
+  height: 0 !important;
+}
+
 #carousel .slide {
   display: inline-block;
   scroll-snap-align: center;
 }
 
+#carousel .emptySlide {
+  display: inline-block;
+  scroll-snap-align: center;
+  width: 450px;
+  height: 250px;
+  margin: 5px;
+  background-color: white;
+}
+
 #services #buttonLeft {
-  color: #ff0000;
+  /* color: #ff0000; */
   position: absolute;
-  left: 30%;
   margin-top: 100px;
+  left: 0;
+  right: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: fit-content; */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  background-color: transparent;
+  background-image: url("images/293664_chevron_left_icon.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #services #buttonRight {
-  color: #ff0000;
+  /* color: #ff0000; */
   position: absolute;
-  right: 30%;
+  /* text-align: center; */
   margin-top: 100px;
+  left: 600px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: fit-content; */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  background-color: transparent;
+  background-image: url("images/293665_right_chevron_icon.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#services #vmButton {
+  width: fit-content;
+  margin: auto;
+  color: #ff0000;
+}
+
+#services #vmButton button {
+  width: 300px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px black solid;
+  border-radius: 35px;
+  text-transform: uppercase;
 }
 
 /* works section */
@@ -217,20 +274,64 @@
 }
 
 #works #buttonLeft {
-  color: #ff0000;
+  /* color: #ff0000; */
   position: absolute;
-  left: 10%;
-  margin-top: 100px;
+  margin-top: 80px;
+  left: 0;
+  right: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  background-color: transparent;
+  background-image: url("images/293664_chevron_left_icon.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #works #buttonRight {
-  color: #ff0000;
+  /* color: #ff0000; */
   position: absolute;
-  right: 10%;
-  margin-top: 100px;
+  margin-top: 80px;
+  left: 900px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: fit-content; */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px black solid;
+  background-color: transparent;
+  background-image: url("images/293665_right_chevron_icon.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#carousel2 {
+  display: flex;
+  width: 800px;
+  margin: auto;
+  overflow: auto;
+}
+
+#carousel2 .slide img {
+  width: 800px;
+  height: 200px;
 }
 
 /* news and topics section */
+
+#newsTopicsHeadline {
+  width: fit-content;
+  margin: auto;
+}
 
 #ntNavbar {
   display: flex;
@@ -261,4 +362,16 @@
 
 .ntPhotobarItem {
   margin: 0 10px;
+}
+
+/* about section */
+
+#aboutContainer {
+  display: flex;
+}
+
+/* recruit section */
+
+#recruitSection {
+  text-align: center;
 }
