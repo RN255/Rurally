@@ -5,7 +5,8 @@ const slider = document.getElementById("carousel");
 //set pre sets
 // let width = screen.width;
 
-// slider.scrollLeft = 600;
+//pre-set item
+slider.scrollLeft = 800;
 
 //main stuff for drag scroll
 let isDown = false;
@@ -19,7 +20,6 @@ slider.addEventListener("mousedown", (e) => {
   console.log(startX);
   // slider.style["scrollSnapType"] = "none";
   // slider.style["scrollBehavior"] = "auto";
-
 });
 
 slider.addEventListener("mouseleave", () => {
@@ -52,7 +52,6 @@ ele2.onclick = function () {
   slider.scrollLeft -= 300;
 };
 
-
 // drag scroll for works sections
 
 const sliderTwo = document.getElementById("carousel2");
@@ -73,8 +72,8 @@ sliderTwo.addEventListener("mousedown", (e) => {
   startX = e.pageX - sliderTwo.offsetLeft;
   scrollLeft = sliderTwo.scrollLeft;
   // console.log(startX);
-    // sliderTwo.style["scrollSnapType"] = "none";
-    // sliderTwo.style["scrollBehavior"] = "none";
+  // sliderTwo.style["scrollSnapType"] = "none";
+  // sliderTwo.style["scrollBehavior"] = "none";
 });
 
 sliderTwo.addEventListener("mouseleave", () => {
@@ -83,8 +82,8 @@ sliderTwo.addEventListener("mouseleave", () => {
 
 sliderTwo.addEventListener("mouseup", () => {
   isDown = false;
-    // sliderTwo.style["scrollSnapType"] = "x mandatory";
-    // sliderTwo.style["scrollBehavior"] = "smooth";
+  // sliderTwo.style["scrollSnapType"] = "x mandatory";
+  // sliderTwo.style["scrollBehavior"] = "smooth";
 });
 
 sliderTwo.addEventListener("mousemove", (e) => {

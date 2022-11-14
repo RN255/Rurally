@@ -47,14 +47,24 @@
   margin: 0 20px;
 }
 
+#sectOne {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 80vh;
+}
+
 #imgOne {
-  position: absolute;
-  /* height: 80vh; */
-  width: 70vw;
+  /* height: 700px; */
+  /* max-width: 65vw; */
+  width: 65vw;
+  /* height: ; */
   object-fit: contain;
-  right: 0;
-  top: 50px;
+  /* right: 0; */
+  left: 35vw;
+  /* top: 50px; */
   z-index: -1;
+  position: absolute;
 }
 
 #greyCircle {
@@ -88,9 +98,12 @@
 /* section two */
 
 #sectTwo {
-  margin-top: 200px;
+  margin-top: vh;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
 }
 
 #blackCircle {
@@ -105,7 +118,7 @@
 }
 
 #textSectTwo {
-  margin: 120px 0 0 50px;
+  margin: 160px 0 0 50px;
   /* top: -250px; */
   /* margin-top: 250px; */
 }
@@ -115,7 +128,7 @@
   color: white;
   background: black;
   width: fit-content;
-  padding: 5px;
+  padding: 15px;
 }
 
 #textSectTwo p {
@@ -129,25 +142,32 @@
 }
 
 #imgTwo {
-  margin-top: 30px;
+  position: absolute;
+  margin-top: 5%;
   /* height: 80vh; */
   /* width: 60vw; */
   object-fit: contain;
   /* position: relative; */
   /* right: 0; */
-  width: 65%;
+  width: 70%;
+  /* left: 50vw; */
+  right: 0;
   /* left: -500px; */
   /* margin-top: 200px; */
   z-index: -2;
 }
 
 #services {
-  margin-top: 250px;
+  margin-top: 50px;
 
   /* position: relative; */
 }
 
 /* services section */
+
+#servicesTitle {
+  margin-bottom: 30px;
+}
 
 #services h1 {
   text-align: center;
@@ -196,7 +216,7 @@
 #carousel .emptySlide {
   display: inline-block;
   scroll-snap-align: center;
-  width: 450px;
+  width: 700px;
   height: 250px;
   margin: 5px;
   background-color: white;
@@ -252,6 +272,7 @@
 }
 
 #services #vmButton button {
+  margin-top: 75px;
   width: 300px;
   padding: 20px;
   background-color: transparent;
@@ -262,23 +283,35 @@
 
 /* works section */
 
+#works {
+  margin-top: 75px;
+}
+
+#worksTitle {
+  margin-bottom: 25px;
+}
+
+#worksTitle p {
+  text-align: center;
+}
+
 #works h1 {
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
 }
 
-#works p {
-  text-align: center;
+#works .slide p {
+  text-align: right;
   font-size: 20px;
 }
 
 #works #buttonLeftTwo {
   /* color: #ff0000; */
   position: absolute;
-  margin-top: 80px;
+  margin-top: 110px;
   left: 0;
-  right: 900px;
+  right: 1100px;
   margin-left: auto;
   margin-right: auto;
 
@@ -296,8 +329,8 @@
 #works #buttonRightTwo {
   /* color: #ff0000; */
   position: absolute;
-  margin-top: 80px;
-  left: 900px;
+  margin-top: 110px;
+  left: 1100px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -316,7 +349,7 @@
 
 #carousel2 {
   display: flex;
-  width: 800px;
+  width: 1000px;
   margin: auto;
   overflow: auto;
   cursor: grab;
@@ -333,15 +366,30 @@
 }
 
 #carousel2 .slide img {
-  width: 800px;
-  height: 200px;
+  width: 1000px;
+  height: 300px;
 }
 
 /* news and topics section */
 
+#newsTopics {
+  margin-top: 100px;
+}
+
 #newsTopicsHeadline {
   width: fit-content;
   margin: auto;
+  margin-bottom: 35px;
+}
+
+#newsTopicsHeadline h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+#newsTopicsHeadline p {
+  font-size: 18px;
+  text-align: center;
 }
 
 #ntNavbar {
@@ -355,6 +403,8 @@
   margin: 0 1px;
   padding: 0 50px;
   border-left: 2px solid black;
+  text-decoration: none;
+  color: black;
 }
 
 #ntNavbar #aOne {
@@ -362,7 +412,7 @@
 }
 
 .ntPhotobarImg {
-  width: 200px;
+  width: 250px;
 }
 
 #ntPhotobar {
@@ -375,13 +425,21 @@
   margin: 0 10px;
 }
 
+.ntPhotobarItem .newsDate {
+  margin-top: 15px;
+}
+
+.ntPhotobarItem .newsItemnotes {
+  margin-top: 15px;
+}
+
 /* about section */
 
 #about {
   margin-top: 100px;
   position: relative;
-  overflow-x: hidden;
-  height: 500px;
+  overflow: hidden;
+  height: 70vh;
 }
 
 #aboutContainer {
@@ -397,7 +455,7 @@
 }
 
 #aboutContainer #aboutPhoto {
-  width: 800px;
+  width: 60vw;
   height: auto;
   position: absolute;
   left: 0px;
@@ -407,8 +465,8 @@
 
 #aboutContainer #aboutDescription {
   position: absolute;
-  margin-top: 100px;
-  left: 750px;
+  margin-top: 8%;
+  left: 58vw;
 }
 
 #aboutContainer #aboutDescription h3 {
@@ -437,29 +495,30 @@
 }
 
 #about #greySquare {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-color: grey;
   z-index: -2;
   border-radius: 35%;
   position: absolute;
-  left: 850px;
+  right: 0px;
+  bottom: 0px;
   /* margin-top: 50px; */
   /* make it transparent? */
 }
 
 #about #greenSquare {
-  margin-top: 25px;
+  /* margin-top: 100px; */
   /* width: 200px;
   border-bottom: 200px;
   border-left: 25px;
   border-right: 25px;
   height: 0px; */
 
-  border-bottom: 400px solid red;
+  border-bottom: 500px solid red;
   border-left: 150px solid transparent;
   border-right: 250px solid transparent;
-  height: 0;
+  height: 100%;
   width: 700px;
 
   /* background-color: green; */
@@ -480,7 +539,7 @@
   background-image: url("images/20160828_172221.jpg");
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 500px;
   margin-bottom: 100px;
 }
 
@@ -517,13 +576,17 @@
 #footerUpper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 150px;
+  width: 70%;
+  margin: auto;
 }
 
 #footerLower {
   display: flex;
   justify-content: space-between;
-  padding: 0 200px 50px;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 #footerLogoContainer {
