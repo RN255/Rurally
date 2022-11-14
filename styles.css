@@ -273,7 +273,7 @@
   font-size: 20px;
 }
 
-#works #buttonLeft {
+#works #buttonLeftTwo {
   /* color: #ff0000; */
   position: absolute;
   margin-top: 80px;
@@ -293,7 +293,7 @@
   background-repeat: no-repeat;
 }
 
-#works #buttonRight {
+#works #buttonRightTwo {
   /* color: #ff0000; */
   position: absolute;
   margin-top: 80px;
@@ -319,6 +319,17 @@
   width: 800px;
   margin: auto;
   overflow: auto;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+#carousel2::-webkit-scrollbar {
+  height: 0 !important;
+}
+
+#carousel2 .slide {
+  scroll-snap-align: center;
 }
 
 #carousel2 .slide img {
@@ -366,12 +377,99 @@
 
 /* about section */
 
+#about {
+  margin-top: 100px;
+}
+
 #aboutContainer {
   display: flex;
+  height: fit-content;
+}
+
+#aboutTitle {
+  background-color: white;
+  padding: 20px 150px;
+}
+
+#aboutContainer #aboutPhoto {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+#aboutContainer #aboutDescription {
+  position: absolute;
+  margin-top: 100px;
+  left: 750px;
+}
+
+#aboutContainer #aboutDescription h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#aboutContainer #aboutDescription p {
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+#aboutContainer #aboutDescription button {
+  padding: 15px;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+#about #greySquare {
+  width: 500px;
+  height: 500px;
+  background-color: grey;
+  z-index: -2;
+  border-radius: 35%;
+  position: absolute;
+  left: 850px;
+  /* margin-top: 50px; */
+  /* make it transparent? */
+}
+
+#about #greenSquare {
+  margin-top: 25px;
+  /* width: 200px;
+  border-bottom: 200px;
+  border-left: 25px;
+  border-right: 25px;
+  height: 0px; */
+
+  border-bottom: 400px solid red;
+  border-left: 150px solid transparent;
+  border-right: 250px solid transparent;
+  height: 0;
+  width: 700px;
+
+  /* background-color: green; */
+  /* z-index: -2; */
+  /* border-radius: 35%; */
+  position: absolute;
+  /* left: 850px; */
+  right: -500px;
+  /* margin-top: 50px; */
+  /* make it transparent? */
 }
 
 /* recruit section */
 
 #recruitSection {
   text-align: center;
+  margin-top: 450px;
 }
