@@ -517,7 +517,7 @@
 #footerUpper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 200px;
+  padding: 50px 150px;
 }
 
 #footerLower {
@@ -526,10 +526,68 @@
   padding: 0 200px 50px;
 }
 
+#footerLogoContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#footerLeftColumn button {
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 20px;
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+#footerLogoContainer h1 {
+  padding-top: 10px;
+}
+
+#footerLeftColumn p {
+  margin-left: 20px;
+}
+
 #socialMediaIcons {
   display: flex;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 500px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
 #footerNavLinks {
   display: flex;
+  text-transform: uppercase;
+}
+
+#footerLogo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#footerNavLinks div {
+  margin-left: 10px;
+}
+
+#footerNavLinks h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#footerNavLinks li {
+  margin-bottom: 5px;
+  left: -10px;
+  font-size: 14px;
 }
