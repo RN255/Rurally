@@ -14,6 +14,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 #logo {
@@ -268,7 +269,7 @@
 #services #vmButton {
   width: fit-content;
   margin: auto;
-  color: #ff0000;
+  /* color: #ff0000; */
 }
 
 #services #vmButton button {
@@ -276,9 +277,12 @@
   width: 300px;
   padding: 20px;
   background-color: transparent;
-  border: 2px black solid;
+  border: 2px #35c1be solid;
+  color: #35c1be;
   border-radius: 35px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* works section */
@@ -299,11 +303,6 @@
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
-}
-
-#works .slide p {
-  text-align: right;
-  font-size: 20px;
 }
 
 #works #buttonLeftTwo {
@@ -365,9 +364,35 @@
   scroll-snap-align: center;
 }
 
-#carousel2 .slide img {
+.worksSlideInner {
+  display: flex;
   width: 1000px;
   height: 300px;
+}
+
+.worksSlideDescription {
+  width: 60%;
+  padding: 1% 3%;
+}
+
+.worksSlideDescription h2 {
+  margin-bottom: 10px;
+}
+
+.worksSlideDescription p {
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+#carousel2 .slide img {
+  width: 40%;
+  height: 100%;
+}
+
+.workSlideViewMore {
+  text-align: right;
+  text-transform: uppercase;
+  color: #35c1be;
 }
 
 /* news and topics section */
@@ -439,7 +464,7 @@
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
 }
 
 #aboutContainer {
@@ -485,13 +510,17 @@
 
 #aboutContainer #aboutDescription button {
   padding: 15px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-left: 0px;
   margin-top: 20px;
   width: 300px;
   border-radius: 25px;
-  border: 1px black solid;
+  border: 2px #35c1be solid;
   background-color: white;
+  color: #35c1be;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #about #greySquare {
@@ -505,6 +534,7 @@
   bottom: 0px;
   /* margin-top: 50px; */
   /* make it transparent? */
+  opacity: 0.2;
 }
 
 #about #greenSquare {
@@ -515,7 +545,7 @@
   border-right: 25px;
   height: 0px; */
 
-  border-bottom: 500px solid red;
+  border-bottom: 500px solid #35c1be;
   border-left: 150px solid transparent;
   border-right: 250px solid transparent;
   height: 100%;
@@ -529,6 +559,7 @@
   right: -500px;
   /* margin-top: 50px; */
   /* make it transparent? */
+  opacity: 0.3;
 }
 
 /* recruit section */
@@ -563,12 +594,16 @@
 #recruitSection button {
   margin-top: 30px;
   padding: 15px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-left: 0px;
   width: 300px;
   border-radius: 25px;
-  border: 1px black solid;
+  border: 2px #35c1be solid;
   background-color: white;
+  color: #35c1be;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* footer section */
@@ -597,12 +632,16 @@
 #footerLeftColumn button {
   margin: 20px 0;
   padding: 15px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-left: 0px;
   width: 200px;
   border-radius: 25px;
-  border: 1px black solid;
+  border: 1px #35c1be solid;
+  color: #35c1be;
   background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #footerLogoContainer h1 {
@@ -653,4 +692,9 @@
   margin-bottom: 5px;
   left: -10px;
   font-size: 14px;
+}
+
+#random {
+  position: absolute;
+  top: 50%;
 }
