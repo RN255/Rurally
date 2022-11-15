@@ -62,7 +62,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  height: 80vh;
+  height: 85vh;
 }
 
 /* #imgOne {
@@ -77,9 +77,9 @@
   position: absolute;
   z-index: -1;
   left: 35vw;
+  height: 90vh;
   object-fit: contain;
 }
-
 
 #greyCircle {
   background-color: #d3d3d350;
@@ -132,13 +132,13 @@
 }
 
 #textSectTwo {
-  margin: 5% 0 0 5%;
+  margin: 10% 0 0 2%;
   /* top: -250px; */
   /* margin-top: 250px; */
 }
 
 #textSectTwo h1 {
-  font-size: 50px;
+  font-size: 35px;
   color: white;
   background: black;
   width: fit-content;
@@ -146,7 +146,7 @@
 }
 
 #textSectTwo p {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   background: black;
   margin: 5px 0;
@@ -158,21 +158,23 @@
 #imgTwo {
   position: absolute;
   margin-top: 1%;
-  /* height: 80vh; */
-  /* width: 60vw; */
   object-fit: contain;
-  /* position: relative; */
-  /* right: 0; */
   width: 70%;
-  /* left: 50vw; */
   right: 0;
-  /* left: -500px; */
-  /* margin-top: 200px; */
+  z-index: -2;
+}
+
+#secondVideo {
+  position: absolute;
+  margin-top: 1%;
+  object-fit: contain;
+  width: 70%;
+  right: 0;
   z-index: -2;
 }
 
 #services {
-  margin-top: 100px;
+  margin-top: 250px;
 
   /* position: relative; */
 }
@@ -180,7 +182,7 @@
 /* services section */
 
 #servicesTitle {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #services h1 {
@@ -213,7 +215,7 @@
   background-color: white;
   overflow: auto;
   white-space: nowrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   cursor: grab;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -289,7 +291,7 @@
 }
 
 #services #vmButton button {
-  margin-top: 75px;
+  margin-top: 25px;
   width: 300px;
   padding: 20px;
   background-color: transparent;
@@ -305,7 +307,7 @@
 /* works section */
 
 #works {
-  margin-top: 75px;
+  margin-top: 200px;
 }
 
 #worksTitle {
@@ -422,7 +424,7 @@
 /* news and topics section */
 
 #newsTopics {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 #newsTopicsHeadline {
@@ -474,6 +476,7 @@
 
 .ntPhotobarItem {
   margin: 0 10px;
+  width: 250px;
 }
 
 .ntPhotobarItem .newsDate {
@@ -500,7 +503,7 @@
 /* about section */
 
 #about {
-  margin-top: 100px;
+  margin-top: 200px;
   position: relative;
   overflow: hidden;
   height: 85vh;
@@ -516,6 +519,11 @@
 #aboutTitle {
   background-color: white;
   padding: 20px 150px;
+}
+
+#aboutTitle h2 {
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 #aboutContainer #aboutPhoto {
@@ -607,7 +615,7 @@
 
 #recruitSection {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 200px;
   background-image: url("images/recruitImg.jpg");
   background-size: cover;
   background-position: center;
@@ -622,14 +630,17 @@
 }
 
 #recruitSection #recruitSectionTitle h2 {
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
+  /* font-weight: bold; */
   /* padding-top: 100px; */
 }
 
 #recruitSection #recruitSectionInfo p {
   color: white;
   padding: 5px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #recruitSection button {
@@ -654,6 +665,10 @@
 }
 
 /* footer section */
+
+#footer {
+  margin-top: 200px;
+}
 
 #footer a {
   text-decoration: none;
