@@ -29,7 +29,7 @@
   display: flex;
 }
 
-#navBar #logoTitle a {
+#navBar #logoTitle h1 {
   margin-top: 8%;
   text-decoration: none;
   color: black;
@@ -37,15 +37,25 @@
   font-weight: bold;
 }
 
+#logoLink {
+  text-decoration: none;
+}
+
 #navBar ul {
   margin-right: 5%;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 #navBar ul li {
   text-transform: uppercase;
   display: inline-block;
   margin: 0 20px;
+}
+
+#navBar ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 #sectOne {
@@ -159,7 +169,7 @@
 }
 
 #services {
-  margin-top: 50px;
+  margin-top: 100px;
 
   /* position: relative; */
 }
@@ -242,6 +252,7 @@
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #services #buttonRight {
@@ -264,6 +275,7 @@
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #services #vmButton {
@@ -283,6 +295,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* works section */
@@ -323,6 +336,7 @@
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #works #buttonRightTwo {
@@ -344,6 +358,7 @@
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #carousel2 {
@@ -392,6 +407,11 @@
 .workSlideViewMore {
   text-align: right;
   text-transform: uppercase;
+  color: #35c1be;
+}
+
+.workSlideViewMore a {
+  text-decoration: none;
   color: #35c1be;
 }
 
@@ -452,6 +472,19 @@
 
 .ntPhotobarItem .newsDate {
   margin-top: 15px;
+}
+
+.ntPhotobarItem .newsTopicsDateAndItem {
+  display: flex;
+}
+
+.ntPhotobarItem .newsTopicsDateAndItem .somethingElse {
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #0087b4;
+  color: white;
+  font-size: 12px;
+  padding: 3px;
 }
 
 .ntPhotobarItem .newsItemnotes {
@@ -521,6 +554,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
 }
 
 #about #greySquare {
@@ -604,9 +638,20 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#recruitSection button:hover {
+  opacity: 0.7;
 }
 
 /* footer section */
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
 
 #footerUpper {
   display: flex;
@@ -636,12 +681,13 @@
   margin-left: 0px;
   width: 200px;
   border-radius: 25px;
-  border: 1px #35c1be solid;
+  border: 2px #35c1be solid;
   color: #35c1be;
   background-color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
 }
 
 #footerLogoContainer h1 {
