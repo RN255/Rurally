@@ -65,18 +65,21 @@
   height: 80vh;
 }
 
-#imgOne {
-  /* height: 700px; */
-  /* max-width: 65vw; */
+/* #imgOne {
   width: 65vw;
-  /* height: ; */
   object-fit: contain;
-  /* right: 0; */
   left: 35vw;
-  /* top: 50px; */
   z-index: -1;
   position: absolute;
+} */
+
+#firstVideo {
+  position: absolute;
+  z-index: -1;
+  left: 35vw;
+  object-fit: contain;
 }
+
 
 #greyCircle {
   background-color: #d3d3d350;
@@ -109,7 +112,7 @@
 /* section two */
 
 #sectTwo {
-  margin-top: vh;
+  margin-top: 5%;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -129,7 +132,7 @@
 }
 
 #textSectTwo {
-  margin: 160px 0 0 50px;
+  margin: 5% 0 0 5%;
   /* top: -250px; */
   /* margin-top: 250px; */
 }
@@ -154,7 +157,7 @@
 
 #imgTwo {
   position: absolute;
-  margin-top: 5%;
+  margin-top: 1%;
   /* height: 80vh; */
   /* width: 60vw; */
   object-fit: contain;
@@ -201,6 +204,7 @@
   width: 450px;
   height: 250px;
   margin: 5px;
+  object-fit: cover;
 }
 
 #carousel {
@@ -458,6 +462,8 @@
 
 .ntPhotobarImg {
   width: 250px;
+  height: 150px;
+  object-fit: cover;
 }
 
 #ntPhotobar {
@@ -497,7 +503,7 @@
   margin-top: 100px;
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 85vh;
 }
 
 #aboutContainer {
@@ -519,6 +525,7 @@
   left: 0px;
   margin-top: 50px;
   z-index: -1;
+  object-fit: cover;
 }
 
 #aboutContainer #aboutDescription {
@@ -601,7 +608,7 @@
 #recruitSection {
   text-align: center;
   margin-top: 100px;
-  background-image: url("images/20160828_172221.jpg");
+  background-image: url("images/recruitImg.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
