@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  /* font-family: "Noto Serif SC", serif; */
+  font-family: "Roboto", "Noto Serif SC", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar  */
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+#logo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#logoTitle {
+  display: flex;
+}
+
+#navBar #logoTitle h1 {
+  margin-top: 8%;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logoLink {
+  text-decoration: none;
+}
+
+#navBar ul {
+  margin-right: 5%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#navBar ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#navBar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer section */
+
+#footer {
+  margin-top: 150px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerUpper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+#footerLower {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#footerLogoContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#footerLeftColumn button {
+  margin: 20px 0;
+  padding: 15px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#footerLogoContainer h1 {
+  padding-top: 10px;
+}
+
+#footerLeftColumn p {
+  margin-left: 20px;
+}
+
+#socialMediaIcons {
+  display: flex;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 500px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+#footerNavLinks {
+  display: flex;
+  text-transform: uppercase;
+}
+
+#footerLogo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#footerNavLinks div {
+  margin-left: 10px;
+}
+
+#footerNavLinks h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#footerNavLinks li {
+  margin-bottom: 5px;
+  left: -10px;
+  font-size: 14px;
+}
+
+#random {
+  position: absolute;
+  top: 50%;
+}
+
+/* about page  */
+
+/* about page main banner  */
+
+#aboutMainBanner {
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  background-image: url("images/aboutBannerImg.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#aboutMainBannercontainer h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  padding: 100px 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#aboutMainBannercontainer p {
+  font-size: 18px;
+  color: white;
+  /* text-transform: uppercase; */
+  padding: 0 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#aboutBlackStripe {
+  background-color: black;
+  opacity: 0.5;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  margin-left: 180px;
+  transform: rotate(20deg);
+}
+
+/* about page vision  */
+
+#visionMessage {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#visionMessage h1 {
+  font-size: 50px;
+}
+
+#visionMessage p {
+  font-size: 18px;
+}
+
+#visionMessageSubText {
+  margin-bottom: 50px;
+}
+
+#visionMessage h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #35c1be;
+}
+
+#visionMessageMainText {
+  line-height: 2em;
+}
+
+/* about CEO message section  */
+
+#CeoMessageSection {
+  margin-top: 150px;
+  display: flex;
+}
+
+#CeoMessageSectionTitleContainer {
+  /* width: 100%; */
+}
+
+#CeoMessageSectionTitle {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  /* width: 500px; */
+  width: 28vw;
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+}
+
+#CeoMessageSectionTitle h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#CeoImg {
+  position: relative;
+  /* width: 525px; */
+  width: 30vw;
+  top: -30px;
+}
+
+#CeoMessageSectionMessage {
+  padding: 50px;
+}
+
+#CeoMessageSectionMessage h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+#CeoMessageSectionMessage p {
+  line-height: 2em;
+}
+
+#signatureContainer {
+  display: flex;
+  padding: 10px 80px;
+}
+
+#signatureContainer img {
+  width: 15vw;
+  margin-right: 50px;
+}
+
+#signatureContainer h4 {
+  padding: 10px;
+}
+
+#signatureContainerCeoTag {
+  color: #35c1be;
+}
+
+/* about company info  */
+
+#aboutCompanyInfo {
+  margin-top: 50px;
+  background-color: rgb(241, 239, 239);
+}
+
+#aboutCompanyInfoDetails {
+  padding: 50px;
+  width: fit-content;
+  margin: auto;
+}
+
+#aboutCompanyInfoTitle {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+#aboutCompanyInfoTitle h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+#aboutCompanyInfoTitle p {
+  font-size: 18px;
+}
+
+#aboutCompanyInfoContainer {
+  display: flex;
+}
+
+#aboutCompanyInfoContainer img {
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+#aboutCompanyInfoImgOne {
+  width: 25vw;
+  border-radius: 6%;
+}
+
+#aboutCompanyInfoImgTwo {
+  width: 20vw;
+  border-radius: 6%;
+}
+
+#aboutCompanyInfoContainer .tableRow {
+  line-height: 3em;
+}
+
+#aboutCompanyInfoContainer th {
+  padding-right: 35px;
+}
+
+#aboutCompanyInfoContainer table .tableRow td {
+  border-bottom: 2px rgb(168, 168, 168) solid;
+}
+
+#aboutCompanyInfoContainer table th {
+  border-bottom: 2px rgb(168, 168, 168) solid;
+}
+
+#aboutCompanyInfoContainer table #firstSixRow {
+  padding-top: 1em;
+}
+
+#aboutCompanyInfoContainer table #lastSixRow {
+  padding-bottom: 1em;
+  border-bottom: 2px rgb(168, 168, 168) solid;
+}
