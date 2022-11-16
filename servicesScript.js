@@ -10,7 +10,7 @@ const sliderTwo = document.getElementById("carousel2");
 
 
 //pre-set item
-sliderTwo.scrollLeft = 1300;
+sliderTwo.scrollLeft = 1000;
 
 //set pre sets
 // let width = screen.width;

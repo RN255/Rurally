@@ -164,15 +164,15 @@
   top: 50%;
 }
 
-/* services page */
+/* Works page */
 
-/* about page main banner  */
+/* works page main banner  */
 
 #servicesMainBanner {
   margin-top: 50px;
   height: 300px;
   width: 100%;
-  background-image: url("images/servicesBanner.jpg");
+  background-image: url("images/worksBanner.jpg");
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -199,7 +199,7 @@
 #servicesBlackStripe {
   background-color: black;
   opacity: 0.5;
-  width: 275px;
+  width: 225px;
   height: 450px;
   position: absolute;
   top: -75px;
@@ -207,156 +207,105 @@
   transform: rotate(20deg);
 }
 
-/* services info  */
+/* works page works category menu section  */
 
-#servicesInfo {
+#worksCategory {
+  margin-top: 100px;
   text-align: center;
 }
 
-#servicesInfo h2 {
+#worksCategory h2 {
   font-size: 30px;
-  font-weight: 400;
-  padding: 75px 0 20px 0;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-#servicesInfo p {
-  font-size: 16px;
-  padding-bottom: 25px;
-}
-
-/* works section */
-
-#works {
+#worksCategory .worksCategoryContainer {
   margin-top: 50px;
-}
-
-#works #buttonLeftTwo {
-  /* color: #ff0000; */
-  position: absolute;
-  margin-top: 110px;
-  left: 0;
-  right: 515px;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px black solid;
-  background-color: transparent;
-  background-image: url("images/293664_chevron_left_icon.png");
-  background-size: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-#works #buttonRightTwo {
-  /* color: #ff0000; */
-  position: absolute;
-  margin-top: 110px;
-  left: 515px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: fit-content; */
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px black solid;
-  background-color: transparent;
-  background-image: url("images/293665_right_chevron_icon.png");
-  background-size: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-#carousel2 {
   display: flex;
-  /* width: 1000px; */
+  flex-wrap: wrap;
+  width: 70%;
   margin: auto;
-  overflow: auto;
-  cursor: grab;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  /* justify-content: space-around; */
+  justify-content: center;
 }
 
-#carousel2::-webkit-scrollbar {
-  height: 0 !important;
+#worksCategory .categoryTitleAndIcon {
+  margin: 10px 50px;
+  /* margin: 10px auto; */
+  display: flex;
+  transition: 0.25s;
 }
 
-#carousel2 .slide {
-  scroll-snap-align: center;
-  text-align: center;
+#worksCategory .categoryTitleAndIcon:hover { 
+    opacity: 0.6;
+    cursor: pointer;
 }
 
-#carousel2 .emptySlide {
-  display: inline-block;
-  scroll-snap-align: center;
-  width: 700px;
-  height: 250px;
-  margin: 5px;
-  background-color: white;
+#worksCategory .categoryTitleAndIcon p {
+  line-height: 30px;
 }
 
-.worksSlideInner {
-  /* display: flex; */
-  width: 500px;
-  height: fit-content;
+#worksCategory .categoryTitleAndIcon img {
+  height: 30px;
+  margin-right: 10px;
 }
 
-.worksSlideDescription {
-  width: 500px;
-  padding: 5px 10px;
+/* works page works category item section  */
+
+#worksCategoryItemsContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.worksSlideDescription h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+#worksCategoryItemsContainer .worksCategoryItems {
+  margin: 25px;
 }
 
-.worksSlideDescription p {
-  height: 130px;
-  line-height: 150%;
-  margin-bottom: 10px;
-  padding: 0 50px;
-}
-
-#carousel2 .slide img {
-  width: 375px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.workSlideViewMore {
-  text-align: right;
-  text-transform: uppercase;
-  color: #35c1be;
-}
-
-.workSlideViewMore a {
-  text-decoration: none;
-  color: #35c1be;
-}
-
-#works .vmButton {
-  width: fit-content;
-  margin: auto;
-  /* color: #ff0000; */
-}
-
-#works .vmButton button {
-  /* margin-top: 25px; */
+#worksCategoryItemsContainer .worksCategoryItems img {
   width: 300px;
-  padding: 16px;
-  background-color: transparent;
-  border: 2px #35c1be solid;
-  color: #35c1be;
-  border-radius: 35px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px white solid;
+  transition: 0.25s;
+}
+
+#worksCategoryItemsContainer .worksCategoryItems img:hover {
+  border: 4px #35c1be solid;
   cursor: pointer;
+}
+
+#worksCategoryItemsContainer .worksCategoryItems h4 {
+  width: 300px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-weight: 400;
+}
+
+#worksCategoryItemsContainer .worksCategoryItems p {
+  width: 300px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#worksItemOne {
+  display: inline;
+}
+
+#worksItemTwo {
+  display: inline;
+}
+
+#worksItemThree {
+  display: inline;
+}
+
+#worksItemFour {
+  display: inline;
+}
+
+#worksItemFive {
+  display: inline;
 }
