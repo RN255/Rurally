@@ -8,3 +8,5 @@
   - privacy policy
   - contact section
   - mobile responsive
+### Notes
+- this site is modelled on: https://dreamly.se/
