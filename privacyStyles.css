@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  /* font-family: "Noto Serif SC", serif; */
+  font-family: "Roboto", "Noto Serif SC", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  margin-top: 50px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+#titleSection {
+  padding-bottom: 25px;
+}
+
+#iconsSections {
+  padding: 25px 0;
+}
+
+hr {
+  border-top: 1px dotted rgb(228, 227, 227);
+}
+
+h3 {
+  font-weight: bold;
+  font-weight: 20px;
+  margin-bottom: 10px;
+}
+
+.flexLine {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.flexItem {
+  display: flex;
+  width: 100%;
+}
+
+.flexItem p {
+  /* text-align: left; */
+}
+
+img {
+  width: 30px;
+  margin-right: 25px;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.headingLower {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.headingInfo {
+}
+
+#mainDescriptionSection {
+  padding: 25px 0;
+}
+
+.mainDescription {
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+#contactTitle {
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+#contactBox {
+  display: flex;
+}
+
+#contactName {
+  font-weight: bold;
+  /* margin-bottom: 5px; */
+}
+
+#contactTitle p {
+}
+
+#contactEmail {
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+#contactEmail span {
+  font-weight: 300;
+}
+
+#footerSection {
+  margin: 25px 0;
+}
+
+#footerSection p {
+  margin: 15px 0;
+}
+
+.rightAlign {
+  text-align: right;
+  font-size: 12px;
+}
+
+.rightAlign a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(248, 247, 247);
+}
+
+#footerBox p {
+  /* position: relative; */
+  /* top: 15px; */
+}
+
+#footerBox p span {
+  font-weight: 500;
+}
+
+#footerBox button {
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(35, 180, 96);
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+}
+
+#footerBox button:hover {
+  cursor: pointer;
+}
