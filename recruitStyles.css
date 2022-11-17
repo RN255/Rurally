@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  /* font-family: "Noto Serif SC", serif; */
+  font-family: "Roboto", "Noto Serif SC", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar  */
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+#logo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#logoTitle {
+  display: flex;
+}
+
+#navBar #logoTitle h1 {
+  margin-top: 8%;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logoLink {
+  text-decoration: none;
+}
+
+#navBar ul {
+  margin-right: 5%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#navBar ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#navBar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer section */
+
+#footer {
+  margin-top: 150px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerUpper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+#footerLower {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#footerLogoContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#footerLeftColumn button {
+  margin: 20px 0;
+  padding: 15px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#footerLogoContainer h1 {
+  padding-top: 10px;
+}
+
+#footerLeftColumn p {
+  margin-left: 20px;
+}
+
+#socialMediaIcons {
+  display: flex;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 500px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+#footerNavLinks {
+  display: flex;
+  text-transform: uppercase;
+}
+
+#footerLogo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#footerNavLinks div {
+  margin-left: 10px;
+}
+
+#footerNavLinks h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#footerNavLinks li {
+  margin-bottom: 5px;
+  left: -10px;
+  font-size: 14px;
+}
+
+#random {
+  position: absolute;
+  top: 50%;
+}
+
+/* Works page */
+
+/* works page main banner  */
+
+#servicesMainBanner {
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  background-image: url("images/worksBanner.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#servicesMainBannercontainer h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  padding: 100px 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#servicesMainBannercontainer p {
+  font-size: 18px;
+  color: white;
+  /* text-transform: uppercase; */
+  padding: 0 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#servicesBlackStripe {
+  background-color: black;
+  opacity: 0.5;
+  width: 375px;
+  height: 450px;
+  position: absolute;
+  top: -75px;
+  margin-left: 180px;
+  transform: rotate(20deg);
+}
+
+/* recruitment page  */
+
+#coreValuesSection {
+  width: fit-content;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#coreValuesSection h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#coreValuesSection p {
+  font-size: 16px;
+}
+
+#coreValuesContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 150px 0;
+}
+
+#coreValuesContainer img {
+  object-fit: cover;
+  width: 60%;
+  height: 80%;
+}
+
+#coreValuesContainer h3 {
+  font-weight: bold;
+  font-size: 25px;
+  width: 50%;
+  margin: 10px auto auto;
+}
+
+#coreValuesContainer p {
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+}
+
+#coreValuesContainer .coreValuesDescription {
+  margin-top: 25px;
+}
+
+/* work style section  */
+/* work style info container  */
+
+#workStyleSection {
+  margin-top: 200px;
+}
+
+#workStyleInfoContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+#workStyleInfoContainer h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  width: 300px;
+}
+
+#workStyleInfoContainer p {
+  line-height: 1.5em;
+}
+
+/* hr info container  */
+
+#HrInfoContainer {
+  margin-top: 100px;
+  display: flex;
+  margin-left: 2vw;
+}
+
+#HrInfoContainer img {
+  height: 80vh;
+}
+
+#HrInfoDescription {
+  position: relative;
+  top: 50px;
+  left: -100px;
+  background-color: white;
+  width: 35vw;
+  padding: 50px 25px 100px;
+  height: fit-content;
+}
+
+#HrInfoContainer h2 {
+  margin-bottom: 25px;
+}
+
+#HrInfoContainer p {
+  line-height: 2em;
+}
+
+/* international Info container  */
+
+#internationalInfoContainer {
+  margin-top: 100px;
+  display: flex;
+  margin-right: 2vw;
+}
+
+#internationalInfoContainer img {
+  height: 80vh;
+}
+
+#internationalInfoDescription {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  background-color: white;
+  width: 35vw;
+  padding: 50px 25px 100px;
+  height: fit-content;
+}
+
+#internationalInfoContainer h2 {
+  margin-bottom: 25px;
+}
+
+#internationalInfoContainer p {
+  line-height: 2em;
+}
+
+/* jobs banner section */
+
+#jobsBanner {
+  text-align: center;
+  margin-top: 150px;
+  background-image: url("images/recruitImg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+#jobsBanner #recruitSectionTitle {
+  padding-top: 100px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#jobsBanner #recruitSectionTitle h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* padding-top: 100px; */
+}
+
+#jobsBanner button {
+  margin-top: 30px;
+  padding: 15px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 300px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  background-color: white;
+  color: #35c1be;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#jobsBanner button:hover {
+  opacity: 0.7;
+}
