@@ -4,6 +4,7 @@
   font-family: "Roboto", "Noto Serif SC", sans-serif;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* navbar  */
@@ -164,15 +165,13 @@
   top: 50%;
 }
 
-/* Works page */
-
-/* works page main banner  */
+/* recruit page main banner  */
 
 #servicesMainBanner {
   margin-top: 50px;
   height: 300px;
   width: 100%;
-  background-image: url("images/worksBanner.jpg");
+  background-image: url("images/recruitBanner.jpg");
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -211,7 +210,8 @@
 
 #coreValuesSection {
   width: fit-content;
-  margin: 100px auto;
+  padding-top: 100px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -257,7 +257,8 @@
 /* work style info container  */
 
 #workStyleSection {
-  margin-top: 200px;
+  margin-top: 100px;
+  padding-top: 100px;
 }
 
 #workStyleInfoContainer {

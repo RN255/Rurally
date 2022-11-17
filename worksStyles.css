@@ -4,6 +4,7 @@
   font-family: "Roboto", "Noto Serif SC", sans-serif;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* navbar  */
@@ -237,9 +238,9 @@
   transition: 0.25s;
 }
 
-#worksCategory .categoryTitleAndIcon:hover { 
-    opacity: 0.6;
-    cursor: pointer;
+#worksCategory .categoryTitleAndIcon:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 #worksCategory .categoryTitleAndIcon p {

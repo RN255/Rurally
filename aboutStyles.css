@@ -4,6 +4,7 @@
   font-family: "Roboto", "Noto Serif SC", sans-serif;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* navbar  */
@@ -211,7 +212,7 @@
 
 #visionMessage {
   text-align: center;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 #visionMessage h1 {
