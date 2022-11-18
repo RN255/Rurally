@@ -48,20 +48,51 @@
         <div id="formDiv">
           <form>
             <label for="comName">company name</label>
-            <input type="text" id="comName" name="comName" /><br />
+            <input type="text" id="comName" name="comName" maxlength="100" />
+            <br />
 
-            <label for="personName">name</label>
-            <input type="text" id="personName" name="personName" /><br />
+            <label for="personName">name<span>required</span></label>
+            <input
+              type="text"
+              id="personName"
+              name="personName"
+              maxlength="100"
+              required
+            />
+            <br />
 
-            <label for="email">email address</label>
-            <input type="text" id="email" name="email" /><br />
+            <label for="email">email address<span>required</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="100"
+              required
+            />
+            <br />
 
             <label for="phoneNo">phone number</label>
-            <input type="number" id="phoneNo" name="phoneNo" /><br />
+            <input
+              type="text"
+              id="phoneNo"
+              name="phoneNo"
+              pattern="[0-9]+"
+              maxlength="100"
+            />
+            <br />
 
-            <label for="message" id="messageLabel">message</label>
-            <textarea name="message" id="message" cols="" rows="10"></textarea
-            ><br />
+            <label for="message" id="messageLabel"
+              >message<span>required</span></label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols=""
+              rows="10"
+              maxlength="5000"
+              required
+            ></textarea>
+            <br />
 
             <div id="buttonHolder">
               <input type="submit" value="send" id="submitButton" />
@@ -134,7 +165,5 @@
         <p>©Rurally Inc. All Rights Reserved.</p>
       </div>
     </section>
-
-    <script src="servicesScript.js"></script>
   </body>
 </html>

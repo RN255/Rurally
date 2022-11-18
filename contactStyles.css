@@ -238,21 +238,33 @@
 form label {
   text-align: left;
   display: inline-block;
-  width: 200px;
+  width: 225px;
   font-size: 20px;
-  margin: 25px 0;
+  margin: 20px 0;
+}
+
+form label span {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 3px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 3px;
 }
 
 form input {
   width: 600px;
   height: 40px;
   border: none;
+  outline: none;
   border-radius: 5px;
   padding: 0 10px;
 }
 
 form textarea {
   border: none;
+  outline: none;
   width: 600px;
   margin-top: 20px;
   padding: 10px;
@@ -276,4 +288,8 @@ form #submitButton {
   font-size: 20px;
   font-weight: 500;
   margin: auto;
+}
+
+form #submitButton:hover {
+  cursor: pointer;
 }
