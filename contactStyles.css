@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  /* font-family: "Noto Serif SC", serif; */
+  font-family: "Roboto", "Noto Serif SC", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* navbar  */
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+#logo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#logoTitle {
+  display: flex;
+}
+
+#navBar #logoTitle h1 {
+  margin-top: 8%;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logoLink {
+  text-decoration: none;
+}
+
+#navBar ul {
+  margin-right: 5%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#navBar ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#navBar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer section */
+
+#footer {
+  margin-top: 150px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footerUpper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+#footerLower {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#footerLogoContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#footerLeftColumn button {
+  margin: 20px 0;
+  padding: 15px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#footerLogoContainer h1 {
+  padding-top: 10px;
+}
+
+#footerLeftColumn p {
+  margin-left: 20px;
+}
+
+#socialMediaIcons {
+  display: flex;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 500px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+#footerNavLinks {
+  display: flex;
+  text-transform: uppercase;
+}
+
+#footerLogo {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+
+#footerNavLinks div {
+  margin-left: 10px;
+}
+
+#footerNavLinks h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#footerNavLinks li {
+  margin-bottom: 5px;
+  left: -10px;
+  font-size: 14px;
+}
+
+#random {
+  position: absolute;
+  top: 50%;
+}
+
+/* contact page */
+
+/* contact page main banner  */
+
+#servicesMainBanner {
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  background-image: url("images/contactBanner.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#servicesMainBannercontainer h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  padding: 100px 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#servicesMainBannercontainer p {
+  font-size: 18px;
+  color: white;
+  /* text-transform: uppercase; */
+  padding: 0 0 0 200px;
+  z-index: 10;
+  position: relative;
+}
+
+#servicesBlackStripe {
+  background-color: black;
+  opacity: 0.5;
+  width: 275px;
+  height: 450px;
+  position: absolute;
+  top: -75px;
+  margin-left: 180px;
+  transform: rotate(20deg);
+}
+
+/* form section  */
+
+#formSection {
+  width: 100%;
+  background-color: rgb(240, 239, 239);
+  padding-bottom: 120px;
+}
+
+#formContainer {
+  width: fit-content;
+  margin: auto;
+  padding-top: 75px;
+}
+
+#formSection h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#formSection p {
+  text-align: center;
+}
+
+#formDiv {
+  margin-top: 35px;
+}
+
+form label {
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+form input {
+  width: 600px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+form textarea {
+  border: none;
+  width: 600px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+form #messageLabel {
+  position: relative;
+  top: -80px;
+}
+
+#buttonHolder {
+  width: fit-content;
+  margin: auto;
+}
+
+form #submitButton {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto;
+}

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <link rel="stylesheet" href="newsStyles.css" />
+    <link rel="stylesheet" href="contactStyles.css" />
     <title>Rurally</title>
     <link rel="icon" type="image/x-icon" href="images\black-circle.png" />
 
@@ -29,56 +29,44 @@
       </ul>
     </section>
 
-    <section id="newsTopics">
-      <div id="newsTopicsHeadline">
-        <h1>News & Topics</h1>
-        <p>company information</p>
+    <section id="servicesMainBanner">
+      <div id="servicesMainBannercontainer">
+        <div>
+          <h1>Contact</h1>
+          <p>inquiry</p>
+        </div>
       </div>
+      <div id="servicesBlackStripe"></div>
+    </section>
 
-      <div id="ntNavbar">
-        <p id="showAll">all</p>
-        <p id="showSeminar">seminar</p>
-        <p id="showEvents">events</p>
-        <p id="showNews">news</p>
-        <p id="showPressRelease">press release</p>
-      </div>
+    <section id="formSection">
+      <div id="formContainer">
+        <div>
+          <h2>Let's do something fun together!</h2>
+          <p>Please fill out the form</p>
+        </div>
+        <div id="formDiv">
+          <form>
+            <label for="comName">company name</label>
+            <input type="text" id="comName" name="comName" /><br />
 
-      <div id="ntPhotobar">
-        <div class="ntPhotobarItem" id="newsItemOne">
-          <a href="#"><img src="images\newsOne.jpg" class="ntPhotobarImg" /></a>
-          <div class="newsTopicsDateAndItem">
-            <p class="newsDate">15.04.2022</p>
-            <p class="somethingElse">news</p>
-          </div>
-          <p class="newsItemnotes">Holiday notice</p>
-        </div>
-        <div class="ntPhotobarItem" id="newsItemTwo">
-          <a href=""><img src="images\newsTwo.jpg" class="ntPhotobarImg" /></a>
-          <div class="newsTopicsDateAndItem">
-            <p class="newsDate">27.12.2021</p>
-            <p class="somethingElse">news</p>
-          </div>
-          <p class="newsItemnotes">New year holiday notice</p>
-        </div>
-        <div class="ntPhotobarItem" id="newsItemThree">
-          <a href=""
-            ><img src="images\newsThree.jpg" class="ntPhotobarImg"
-          /></a>
-          <div class="newsTopicsDateAndItem">
-            <p class="newsDate">31.05.2021</p>
-            <p class="somethingElse">news</p>
-          </div>
-          <p class="newsItemnotes">
-            A new 'idea' space has opened in the company offices
-          </p>
-        </div>
-        <div class="ntPhotobarItem" id="newsItemFour">
-          <a href=""><img src="images\newsFour.jpg" class="ntPhotobarImg" /></a>
-          <div class="newsTopicsDateAndItem">
-            <p class="newsDate">22.10.2020</p>
-            <p class="somethingElse">event</p>
-          </div>
-          <p class="newsItemnotes">Exhibition report</p>
+            <label for="personName">name</label>
+            <input type="text" id="personName" name="personName" /><br />
+
+            <label for="email">email address</label>
+            <input type="text" id="email" name="email" /><br />
+
+            <label for="phoneNo">phone number</label>
+            <input type="number" id="phoneNo" name="phoneNo" /><br />
+
+            <label for="message" id="messageLabel">message</label>
+            <textarea name="message" id="message" cols="" rows="10"></textarea
+            ><br />
+
+            <div id="buttonHolder">
+              <input type="submit" value="send" id="submitButton" />
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -94,7 +82,7 @@
           >
 
           <p>34, Long Road, Small Town, Countryshire, UK, GQ4 7WS</p>
-          <a href="contact.html"><button>Contact</button></a>
+          <a href="#"><button>Contact</button></a>
           <div id="socialMediaIcons">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -147,6 +135,6 @@
       </div>
     </section>
 
-    <script src="newsScript.js"></script>
+    <script src="servicesScript.js"></script>
   </body>
 </html>
