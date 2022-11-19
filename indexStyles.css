@@ -507,6 +507,27 @@
   margin-top: 15px;
 }
 
+#viewNewsButton {
+  display: none;
+  width: fit-content;
+  margin: auto;
+  /* color: #ff0000; */
+}
+
+#viewNewsButton button {
+  margin-top: 25px;
+  width: 300px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 /* about section */
 
 #about {
@@ -561,6 +582,10 @@
   padding: 5px;
   font-size: 20px;
   margin-left: 80px;
+}
+
+#aboutContainer #aboutDescription a {
+  text-decoration: none;
 }
 
 #aboutContainer #aboutDescription button {
@@ -769,11 +794,6 @@
   font-size: 14px;
 }
 
-#random {
-  position: absolute;
-  top: 50%;
-}
-
 @media (max-width: 1000px) {
   /* nav bar  */
 
@@ -783,10 +803,16 @@
 
   /* section one  */
 
+  #sectOne {
+    height: fit-content;
+  }
+
   #firstVideo {
+    /* position: relative; */
     left: 0vw;
     width: 100vw;
-    height: fit-content;
+    height: 40vh;
+    object-fit: cover;
   }
 
   #greyCircle {
@@ -794,7 +820,7 @@
   }
 
   #textSectOne {
-    margin: 225px 0 0 20px;
+    margin: 42vh 0 0 20px;
   }
 
   #textSectOne h1 {
@@ -820,11 +846,13 @@
   }
 
   #secondVideo {
-    width: 100%;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
   }
 
   #textSectTwo {
-    margin: 63% 0 0 2%;
+    margin: 45vh 0 0 2%;
     /* top: -250px; */
     /* margin-top: 250px; */
   }
@@ -862,12 +890,29 @@
     font-size: 18px;
   }
 
+  #carousel img {
+    padding: 5px;
+    width: 95vw;
+    height: 250px;
+    margin: 5px;
+    object-fit: cover;
+  }
+
+  #carousel {
+    width: 95vw;
+    margin: auto;
+  }
+
   #services #buttonLeft {
     right: 80vw;
+    width: 40px;
+    height: 40px;
   }
 
   #services #buttonRight {
     left: 80vw;
+    width: 40px;
+    height: 40px;
   }
 
   #carousel .emptySlide {
@@ -885,19 +930,23 @@
   }
 
   #carousel2 {
-    width: 100vw;
+    width: 75vw;
   }
 
   .worksSlideInner {
-    width: 100vw;
+    width: 75vw;
   }
 
   #works #buttonLeftTwo {
-    right: 80vw;
+    right: 85vw;
+    width: 30px;
+    height: 30px;
   }
 
   #works #buttonRightTwo {
-    left: 80vw;
+    left: 85vw;
+    width: 30px;
+    height: 30px;
   }
 
   .worksSlideInner {
@@ -905,12 +954,12 @@
   }
 
   #carousel2 .slide img {
-    width: 100vw;
+    width: 75vw;
     height: 30%;
   }
 
   .worksSlideDescription {
-    width: 100%;
+    width: 75vw;
     padding: 1% 3%;
   }
 
@@ -955,17 +1004,118 @@
     margin-top: 5px;
   }
 
+  #viewNewsButton {
+    display: block;
+  }
+
+  /* about section  */
+
+  #about {
+    margin-top: 100px;
+    height: fit-content;
+  }
+
+  #aboutTitle {
+    padding: 20px 15px;
+  }
+
+  #aboutContainer #aboutPhoto {
+    display: block;
+    width: 80vw;
+    /* height: auto; */
+    /* position: relative; */
+    /* left: 10px; */
+    /* margin: 50px auto 0; */
+    margin: auto;
+
+    /* z-index: -1; */
+    /* object-fit: cover; */
+  }
+
+  #aboutContainer {
+    display: block;
+  }
+
+  #aboutContainer #aboutPhoto {
+    position: relative;
+  }
+
+  #aboutContainer #aboutDescription {
+    position: relative;
+    left: 0;
+  }
+
+  #aboutContainer #aboutDescription h3 {
+    margin: 10px 3vw 10px;
+    font-size: 20px;
+    width: fit-content;
+  }
+
+  #aboutContainer #aboutDescription p {
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 3vw;
+  }
+
+  #aboutTitle h2 {
+    font-size: 30px;
+  }
+
+  #aboutContainer #aboutDescription button {
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  #about #greySquare {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 20px;
+    bottom: 200px;
+  }
+
   /* footer section  */
 
   #footerUpper {
     display: inline;
   }
 
-  #footerLower {
-    display: inline;
+  #footerLeftColumn button {
+    margin: 20px 20px;
+  }
+
+  #adressLine {
+    width: 80%;
+  }
+
+  #socialMediaIcons {
+    margin-bottom: 25px;
+  }
+
+  .footerNavLinksItem {
+    display: flex;
   }
 
   #footerNavLinks {
     display: inline;
+  }
+
+  .footerNavLinksTitle {
+    width: 50vw;
+  }
+
+  #footerNavLinks ul {
+  }
+
+  #footerLower {
+    display: inline;
+  }
+
+  #footerLower p {
+    margin: 10px 20px 0px;
+  }
+
+  #footerLower #copywriteLine {
+    margin-bottom: 100px;
   }
 }
