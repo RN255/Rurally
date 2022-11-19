@@ -44,20 +44,97 @@
 }
 
 #navBar ul {
-  margin-right: 5%;
-  margin-top: 15px;
+  position: relative;
+  margin: 15px 5% 0 0;
+  padding: unset;
+  width: unset;
+  top: unset;
   cursor: pointer;
+  /* display: unset; */
 }
 
-#navBar ul li {
+.navBarLiItem {
   text-transform: uppercase;
   display: inline-block;
   margin: 0 20px;
+  font-size: unset;
+  text-align: unset;
 }
 
 #navBar ul li a {
   text-decoration: none;
   color: black;
+}
+
+#navBar ul li button {
+  margin: 0;
+  padding: 10px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#navBar ul #navBarPrivacy p {
+  font-size: 12px;
+  color: white;
+}
+
+#navBar ul #navBarContact {
+  display: none;
+}
+
+#navBar ul #navBarPrivacy {
+  display: none;
+}
+
+#navBar ul #navBarSocialMediaIcons {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
+}
+
+#navBar #closeIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #closeIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #closeIconDiv {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #hamburgerIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
 }
 
 /* section one  */
@@ -795,10 +872,61 @@
 }
 
 @media (max-width: 1000px) {
-  /* nav bar  */
+  /* mobile view navBar */
+  /* this is what you will transform into when you create it  */
+  /* this will all be deleted  */
+  /* this will go into a JS function  */
+  /* on the small screen it will just change to a hamburger  */
 
-  #navBar ul {
+  /* #navBar {
+    background-color: #35c1be;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  /* FROM HERE HAVE NOT BEEN ADDED */
+
+  /* #navBar ul {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    top: 15vh;
+    cursor: default;
+  }
+ 
+  #navBar ul li {
+    display: block;
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #navBar ul #navBarContact {
+    display: block;
+  }
+
+  #navBar ul #navBarPrivacy {
+    display: block;
+  }
+
+  #navBar ul #navBarSocialMediaIcons {
+    display: block;
+  } */
+
+  /* THIS IS THE END OF WHERE WE ADD TOO  */
+
+  /* nav bar  */
+  /* navbar will be hidden  */
+
+  #navBarUl {
     display: none;
+  }
+
+  /* this is all we will display  */
+
+  #navBar #hamburgerIconDiv {
+    display: inline;
   }
 
   /* section one  */
@@ -934,7 +1062,9 @@
   }
 
   .worksSlideInner {
+    display: inline;
     width: 75vw;
+    height: 200vh;
   }
 
   #works #buttonLeftTwo {
@@ -949,13 +1079,9 @@
     height: 30px;
   }
 
-  .worksSlideInner {
-    display: inline;
-  }
-
   #carousel2 .slide img {
     width: 75vw;
-    height: 30%;
+    height: 25%;
   }
 
   .worksSlideDescription {
@@ -964,11 +1090,11 @@
   }
 
   .worksSlideDescription h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .worksSlideDescription p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* news section  */
