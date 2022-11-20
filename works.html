@@ -19,13 +19,39 @@
           <h1>Rurally</h1>
         </div>
       </a>
+      <div id="hamburgerIconDiv">
+        <img
+          src="images\hamburger.png"
+          alt="hamburger icon"
+          id="hamburgerIcon"
+        />
+      </div>
+      <div id="closeIconDiv">
+        <img src="images\close.png" alt="hamburger icon" id="closeIcon" />
+      </div>
 
-      <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="services.html">services</a></li>
-        <li><a href="works.html">works</a></li>
-        <li><a href="news.html">news</a></li>
-        <li><a href="recruit.html">recruit</a></li>
+      <ul id="navBarUl">
+        <li class="navBarLiItem"><a href="about.html">about</a></li>
+        <li class="navBarLiItem"><a href="services.html">services</a></li>
+        <li class="navBarLiItem"><a href="works.html">works</a></li>
+        <li class="navBarLiItem"><a href="news.html">news</a></li>
+        <li class="navBarLiItem"><a href="recruit.html">recruit</a></li>
+        <li class="navBarLiItem" id="navBarContact">
+          <a href="contact.html"><button>Contact</button></a>
+        </li>
+        <li class="navBarLiItem" id="navBarPrivacy">
+          <a href="privacy.html" target="_blank" rel="noopener noreferrer"
+            ><p>privacy policy</p></a
+          >
+        </li>
+        <li class="navBarLiItem" id="navBarSocialMediaIcons">
+          <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </li>
       </ul>
     </section>
 
@@ -42,40 +68,40 @@
     <section id="worksCategory">
       <h2>Category</h2>
 
-      <div class="worksCategoryContainer">
-        <div class="categoryTitleAndIcon" id="selectAll">
-          <img src="images\black-circle.png" alt="smart phone icon" />
-          <p>All</p>
+        <div class="worksCategoryContainer">
+          <div class="categoryTitleAndIcon" id="selectAll">
+            <img src="images\black-circle.png" alt="smart phone icon" />
+            <p>All</p>
+          </div>
+          <div class="categoryTitleAndIcon" id="selectSmartphone">
+            <img src="images\smartphone.png" alt="smart phone icon" />
+            <p>Smartphone application development</p>
+          </div>
         </div>
-        <div class="categoryTitleAndIcon" id="selectSmartphone">
-          <img src="images\smartphone.png" alt="smart phone icon" />
-          <p>Smartphone application development</p>
+        <div class="worksCategoryContainer">
+          <div class="categoryTitleAndIcon" id="selectWebApp">
+            <img src="images\monitor.png" alt="monitor icon" />
+            <p>Web application development</p>
+          </div>
+          <div class="categoryTitleAndIcon" id="selectSystem">
+            <img src="images\settings.png" alt="settings icon" />
+            <p>System development</p>
+          </div>
+          <div class="categoryTitleAndIcon" id="selectIot">
+            <img src="images\microchip.png" alt="microchip icon" />
+            <p>IoT development</p>
+          </div>
         </div>
-    </div>
-    <div class="worksCategoryContainer">
-        <div class="categoryTitleAndIcon" id="selectWebApp">
-          <img src="images\monitor.png" alt="monitor icon" />
-          <p>Web application development</p>
+        <div class="worksCategoryContainer">
+          <div class="categoryTitleAndIcon" id="selectAi">
+            <img src="images\brain.png" alt="brain icon" />
+            <p>AI (machine learning)</p>
+          </div>
+          <div class="categoryTitleAndIcon" id="selectIt">
+            <img src="images\interface.png" alt="interface icon" />
+            <p>IT/DX Consulting</p>
+          </div>
         </div>
-        <div class="categoryTitleAndIcon" id="selectSystem">
-          <img src="images\settings.png" alt="settings icon" />
-          <p>System development</p>
-        </div>
-        <div class="categoryTitleAndIcon" id="selectIot">
-          <img src="images\microchip.png" alt="microchip icon" />
-          <p>IoT development</p>
-        </div>
-    </div>
-    <div class="worksCategoryContainer">
-        <div class="categoryTitleAndIcon" id="selectAi">
-          <img src="images\brain.png" alt="brain icon" />
-          <p>AI (machine learning)</p>
-        </div>
-        <div class="categoryTitleAndIcon" id="selectIt">
-          <img src="images\interface.png" alt="interface icon" />
-          <p>IT/DX Consulting</p>
-        </div>
-    </div>
 
       </div>
     </section>
