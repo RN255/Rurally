@@ -18,7 +18,7 @@
   top: 0;
   width: 100%;
   height: 50px;
-  z-index: 10;
+  z-index: 20;
 }
 
 #logo {
@@ -46,20 +46,97 @@
 }
 
 #navBar ul {
-  margin-right: 5%;
-  margin-top: 15px;
+  position: relative;
+  margin: 15px 5% 0 0;
+  padding: unset;
+  width: unset;
+  top: unset;
   cursor: pointer;
+  /* display: unset; */
 }
 
-#navBar ul li {
+.navBarLiItem {
   text-transform: uppercase;
   display: inline-block;
   margin: 0 20px;
+  font-size: unset;
+  text-align: unset;
 }
 
 #navBar ul li a {
   text-decoration: none;
   color: black;
+}
+
+#navBar ul li button {
+  margin: 0;
+  padding: 10px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#navBar ul #navBarPrivacy p {
+  font-size: 12px;
+  color: white;
+}
+
+#navBar ul #navBarContact {
+  display: none;
+}
+
+#navBar ul #navBarPrivacy {
+  display: none;
+}
+
+#navBar ul #navBarSocialMediaIcons {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
+}
+
+#navBar #closeIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #closeIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #closeIconDiv {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #hamburgerIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
 }
 
 /* footer section */
@@ -158,11 +235,6 @@
   margin-bottom: 5px;
   left: -10px;
   font-size: 14px;
-}
-
-#random {
-  position: absolute;
-  top: 50%;
 }
 
 /* news page */
@@ -268,4 +340,118 @@
 
 .ntPhotobarItem .newsItemnotes {
   margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  /* nav bar  */
+  /* navbar will be hidden  */
+
+  #navBarUl {
+    display: none;
+  }
+
+  /* this is all we will display  */
+
+  #navBar #hamburgerIconDiv {
+    display: inline;
+  }
+
+  /* news and topics section */
+
+  #newsTopics {
+    margin-top: 100px;
+  }
+
+  #newsTopicsHeadline h1 {
+    font-size: 30px;
+  }
+
+  #newsTopicsHeadline p {
+    font-size: 14px;
+  }
+
+  #ntNavbar p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  #ntPhotobar {
+    display: block;
+  }
+
+  #newsItemOne {
+    display: block;
+  }
+
+  #newsItemTwo {
+    display: block;
+  }
+
+  #newsItemThree {
+    display: block;
+  }
+
+  #newsItemFour {
+    display: block;
+  }
+
+  .ntPhotobarItem .newsDate {
+    margin-top: 5px;
+  }
+
+  .ntPhotobarItem .newsTopicsDateAndItem .somethingElse {
+    margin-top: 5px;
+  }
+  .ntPhotobarItem {
+    margin: 40px 10px 0;
+  }
+
+  .ntPhotobarItem .newsItemnotes {
+    margin-top: 5px;
+  }
+
+  /* footer section  */
+
+  #footerUpper {
+    display: inline;
+  }
+
+  #footerLeftColumn button {
+    margin: 20px 20px;
+  }
+
+  #adressLine {
+    width: 80%;
+  }
+
+  #socialMediaIcons {
+    margin-bottom: 25px;
+  }
+
+  .footerNavLinksItem {
+    display: flex;
+  }
+
+  #footerNavLinks {
+    display: inline;
+  }
+
+  .footerNavLinksTitle {
+    width: 50vw;
+  }
+
+  #footerNavLinks ul {
+  }
+
+  #footerLower {
+    display: inline;
+  }
+
+  #footerLower p {
+    margin: 10px 20px 0px;
+  }
+
+  #footerLower #copywriteLine {
+    margin-bottom: 100px;
+  }
 }
