@@ -46,20 +46,97 @@
 }
 
 #navBar ul {
-  margin-right: 5%;
-  margin-top: 15px;
+  position: relative;
+  margin: 15px 5% 0 0;
+  padding: unset;
+  width: unset;
+  top: unset;
   cursor: pointer;
+  /* display: unset; */
 }
 
-#navBar ul li {
+.navBarLiItem {
   text-transform: uppercase;
   display: inline-block;
   margin: 0 20px;
+  font-size: unset;
+  text-align: unset;
 }
 
 #navBar ul li a {
   text-decoration: none;
   color: black;
+}
+
+#navBar ul li button {
+  margin: 0;
+  padding: 10px;
+  /* font-size: 20px; */
+  margin-left: 0px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px #35c1be solid;
+  color: #35c1be;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#navBar ul #navBarPrivacy p {
+  font-size: 12px;
+  color: white;
+}
+
+#navBar ul #navBarContact {
+  display: none;
+}
+
+#navBar ul #navBarPrivacy {
+  display: none;
+}
+
+#navBar ul #navBarSocialMediaIcons {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
+}
+
+#navBar #closeIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #closeIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #closeIconDiv {
+  display: none;
+}
+
+#navBar #hamburgerIconDiv img {
+  margin: 15px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#navBar #hamburgerIconDiv img:hover {
+  cursor: pointer;
+}
+
+#navBar #hamburgerIconDiv {
+  display: none;
 }
 
 /* footer section */
@@ -160,11 +237,6 @@
   font-size: 14px;
 }
 
-#random {
-  position: absolute;
-  top: 50%;
-}
-
 /* about page  */
 
 /* about page main banner  */
@@ -221,6 +293,7 @@
 
 #visionMessage p {
   font-size: 18px;
+  margin: 5px 0;
 }
 
 #visionMessageSubText {
@@ -252,7 +325,6 @@
   position: relative;
   z-index: 10;
   background-color: white;
-  /* width: 500px; */
   width: 28vw;
   padding: 20px 50px 20px 50px;
   text-align: center;
@@ -373,4 +445,198 @@
 #aboutCompanyInfoContainer table #lastSixRow {
   padding-bottom: 1em;
   border-bottom: 2px rgb(168, 168, 168) solid;
+}
+
+@media (max-width: 1000px) {
+  /* nav bar  */
+  /* navbar will be hidden  */
+
+  #navBarUl {
+    display: none;
+  }
+
+  /* this is all we will display  */
+
+  #navBar #hamburgerIconDiv {
+    display: inline;
+  }
+
+  /* about page main banner  */
+
+  #aboutMainBanner {
+    height: 125px;
+  }
+
+  #aboutMainBannercontainer h1 {
+    font-size: 30px;
+    padding: 25px 0 0 40px;
+  }
+
+  #aboutMainBannercontainer p {
+    font-size: 16px;
+    padding: 0 0 0 40px;
+  }
+
+  #aboutBlackStripe {
+    width: 125px;
+    margin-left: 0px;
+  }
+
+  /* about page vision  */
+
+  #visionMessage {
+    padding-top: 10vh;
+  }
+
+  #visionMessage h1 {
+    font-size: 30px;
+  }
+
+  #visionMessage p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  #visionMessageSubText {
+    margin-bottom: 5vh;
+  }
+
+  #visionMessage h2 {
+    font-size: 24px;
+    margin: 0 15px 20px;
+  }
+
+  #visionMessageMainText {
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  /* about CEO message section  */
+
+  #CeoMessageSection {
+    margin-top: 100px;
+    display: block;
+  }
+
+  #CeoMessageSectionTitle {
+    position: relative;
+    width: 40vw;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+
+  #CeoMessageSectionTitle h2 {
+    font-size: 20px;
+  }
+
+  #CeoImg {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #CeoMessageSectionMessage {
+    padding: 20px;
+  }
+
+  #CeoMessageSectionMessage p {
+    line-height: 1.5em;
+  }
+
+  #signatureContainer {
+    display: block;
+  }
+
+  #signatureContainer img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  #signatureContainer h4 {
+    padding: 5px;
+    text-align: center;
+  }
+
+  /* about company info  */
+
+  #aboutCompanyInfoDetails {
+    padding: 10px;
+  }
+
+  #aboutCompanyInfoTitle h2 {
+    font-size: 30px;
+  }
+
+  #aboutCompanyInfoContainer {
+    display: block;
+  }
+
+  #aboutCompanyInfoContainer .tableRow {
+    line-height: 1.5em;
+  }
+
+  #aboutCompanyInfoImgDiv {
+    margin-top: 5vh;
+  }
+
+  #aboutCompanyInfoContainer img {
+    display: block;
+    margin: 30px auto;
+  }
+
+  #aboutCompanyInfoImgOne {
+    width: 80vw;
+    border-radius: 6%;
+  }
+
+  #aboutCompanyInfoImgTwo {
+    width: 60vw;
+    border-radius: 6%;
+  }
+
+  /* footer section  */
+
+  #footerUpper {
+    display: inline;
+  }
+
+  #footerLeftColumn button {
+    margin: 20px 20px;
+  }
+
+  #adressLine {
+    width: 80%;
+  }
+
+  #socialMediaIcons {
+    margin-bottom: 25px;
+  }
+
+  .footerNavLinksItem {
+    display: flex;
+  }
+
+  #footerNavLinks {
+    display: inline;
+  }
+
+  .footerNavLinksTitle {
+    width: 50vw;
+  }
+
+  #footerNavLinks ul {
+  }
+
+  #footerLower {
+    display: inline;
+  }
+
+  #footerLower p {
+    margin: 10px 20px 0px;
+  }
+
+  #footerLower #copywriteLine {
+    margin-bottom: 100px;
+  }
 }
