@@ -3,10 +3,7 @@
 - Website is live at: https://rn255.github.io/Rurally/
 ## Latest update:
   - whole site is complete basic
-  - it is not yet responsive for mobile
 ## Next steps
-  - privacy policy
-  - contact section
-  - mobile responsive
+  - 
 ### Notes
 - this site is modelled on: https://dreamly.se/
