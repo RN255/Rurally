@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow: auto;
+}
+
 #navBar {
   display: flex;
   justify-content: space-between;

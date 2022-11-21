@@ -12,6 +12,7 @@ const closeIconDiv = document.getElementById("closeIconDiv");
 const navBar = document.getElementById("navBar");
 const navBarUl = document.getElementById("navBarUl");
 const navBarLiItem = document.querySelectorAll(".navBarLiItem");
+const body = document.querySelector("body");
 
 // const navBarPrivacy = document.getElementById("navBarPrivacy");
 // const navBarSocialMediaIcons = document.getElementById("navBarSocialMediaIcons");
@@ -22,6 +23,9 @@ hamburgerIcon.onclick = function () {
   // hide hamburger and reveal cross
   hamburgerIconDiv.style.display = "none";
   closeIconDiv.style.display = "inline";
+
+  // disable scroll
+  body.style.overflow = "hidden";
 
   // change #navBar
   navBar.style["backgroundColor"] = "#35c1be";
@@ -52,6 +56,9 @@ closeIcon.onclick = function () {
   // hide cross and reveal hamburger
   hamburgerIconDiv.style.display = "inline";
   closeIconDiv.style.display = "none";
+
+  // enable scroll
+  body.style.overflow = "auto";
 
   // change #navBar
   navBar.style["backgroundColor"] = "white";
