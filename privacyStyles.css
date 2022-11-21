@@ -160,3 +160,21 @@ img {
 #footerBox button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+
+  .flexLine {
+    display: block;
+  }
+
+  .flexItem {
+    padding: 20px 0 20px;
+  }
+
+  .flexLine {
+    padding: 0;
+  }
+}
