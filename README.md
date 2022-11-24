@@ -26,7 +26,7 @@ I knew what to do with this project, but it was larger than what I had done befo
 I learnt a few things about the sidewards scrolling carousels.
 
 ## Screenshot
-![This is an image](/../../../../github/docs/blob/main/images/rurally-screenshot.jpg)
+![This is an image](https://raw.githubusercontent.com/RN255/portfolio-site/main/images/rurally-screenshot.jpg)
 
 ## How to use
 Website is live at: https://rn255.github.io/Rurally/
