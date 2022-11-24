@@ -27,6 +27,7 @@ I contacted the CEO of the company this website is modelled on. He said I was no
 ## future development
 - The products and services do not have their own detailed web pages
 - The original website had an additional fixed contact button at the bottom right of the screen
+- I have a html, css and js file for each page, could they be organised better? Maybe into folders?
 
 ## How to use
 Website is live at: https://rn255.github.io/Rurally/
