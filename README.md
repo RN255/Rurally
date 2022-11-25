@@ -33,4 +33,4 @@ I contacted the CEO of the company this website is modelled on. He said I was no
 Website is live at: https://rn255.github.io/Rurally/
 
 ## Screenshot
-![This is an image](https://raw.githubusercontent.com/RN255/portfolio-site/main/images/rurally-screenshot.jpg)
+![Rurally screenshot](https://github.com/RN255/Rurally/blob/main/images/rurally-screenshot.jpg)
