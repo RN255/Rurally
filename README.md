@@ -3,6 +3,13 @@ This is a website for a fictional company called "Rurally".
 The company specialises in bringing tech to the countryside and helping businesses grow.
 The website contains information on their products and services, a message from the CEO, news, recruitment information and contact infromation. There is also a privacy policy.
 
+
+## How to use
+Website is live at: https://rn255.github.io/Rurally/
+
+## Screenshot
+![Rurally screenshot](https://github.com/RN255/Rurally/blob/main/images/rurally-screenshot.jpg)
+
 ## Motivation
 I contacted the CEO of the company this website is modelled on. He said I was not good enough to be employed there so I thought a good next step was to try and recreate their main web site. The original website is here: https://dreamly.se/
 
@@ -28,9 +35,3 @@ I contacted the CEO of the company this website is modelled on. He said I was no
 - The products and services do not have their own detailed web pages
 - The original website had an additional fixed contact button at the bottom right of the screen
 - I have a html, css and js file for each page, could they be organised better? Maybe into folders?
-
-## How to use
-Website is live at: https://rn255.github.io/Rurally/
-
-## Screenshot
-![Rurally screenshot](https://github.com/RN255/Rurally/blob/main/images/rurally-screenshot.jpg)
