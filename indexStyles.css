@@ -170,8 +170,35 @@ body {
   position: absolute;
   z-index: -1;
   left: 35vw;
+
+  top: unset;
+  transform: unset;
+  display: block;
+
   height: 90vh;
   object-fit: contain;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+#enlargeVideoButton {
+  border: solid 1px #ffffff75;
+  color: #ffffff75;
+  background: none;
+  position: absolute;
+  left: 36vw;
+  bottom: 10px;
+}
+
+#shrinkVideoButton {
+  border: solid 1px #ffffff75;
+  color: #ffffff75;
+  background: none;
+  position: fixed;
+  left: 45vw;
+  bottom: 8vh;
+  display: none;
+  z-index: 2;
 }
 
 #greyCircle {
@@ -948,10 +975,18 @@ body {
 
   #firstVideo {
     /* position: relative; */
-    left: 0vw;
+    left: 0vw !important;
     width: 100vw;
     height: 40vh;
     object-fit: cover;
+  }
+
+  #enlargeVideoButton {
+    display: none !important;
+  }
+
+  #shrinkVideoButton {
+    display: none !important;
   }
 
   #greyCircle {
