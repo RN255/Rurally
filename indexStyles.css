@@ -909,6 +909,57 @@ body {
   font-size: 14px;
 }
 
+/* floating button  */
+
+#floatingButton {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+  background-image: linear-gradient(to right, #35c1be, #196d6b);
+  border-radius: 25px;
+}
+
+#floatingButton button {
+  padding: 10px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 3;
+  margin-right: 20px;
+}
+
+#floatingButton button img {
+  position: absolute;
+  height: 18px;
+  padding-left: 15px;
+  bottom: 11px;
+}
+
+#floatingButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease;
+  background: linear-gradient(to right, #196d6b, #35c1be);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: 1;
+}
+
+#floatingButton:hover::after {
+  opacity: 1;
+}
+
 @media (max-width: 1000px) {
   /* mobile view navBar */
   /* this is what you will transform into when you create it  */
@@ -1289,5 +1340,14 @@ body {
 
   #footerLower #copywriteLine {
     margin-bottom: 100px;
+  }
+
+  /* floating button  */
+
+  #floatingButton {
+    bottom: 1vh;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
