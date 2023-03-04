@@ -68,6 +68,13 @@ body {
 #navBar ul li a {
   text-decoration: none;
   color: black;
+  transition: 0.25s;
+}
+
+#navBar ul li a:hover {
+  text-decoration: none;
+  color: #00000075;
+  transition: 0.25s;
 }
 
 #navBar ul li button {
