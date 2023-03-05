@@ -205,7 +205,7 @@ const firstVideo = document.getElementById("firstVideo");
 enlargeVideoButton.onclick = function () {
   firstVideo.style.opacity = "0";
 
-  setTimeout(changeLocation, 500);
+  setTimeout(changeLocation, 250);
 
   function changeLocation() {
     firstVideo.style.position = "fixed";
@@ -217,7 +217,7 @@ enlargeVideoButton.onclick = function () {
 
     enlargeVideoButton.style.display = "none";
 
-    setTimeout(displayAgain, 500);
+    setTimeout(displayAgain, 250);
 
     function displayAgain() {
       firstVideo.style.opacity = "1";
@@ -229,7 +229,7 @@ enlargeVideoButton.onclick = function () {
 shrinkVideoButton.onclick = function () {
   firstVideo.style.opacity = "0";
 
-  setTimeout(changeLocation, 500);
+  setTimeout(changeLocation, 250);
 
   function changeLocation() {
     firstVideo.style.position = "absolute";
@@ -241,7 +241,7 @@ shrinkVideoButton.onclick = function () {
 
     shrinkVideoButton.style.display = "none";
 
-    setTimeout(displayAgain, 500);
+    setTimeout(displayAgain, 250);
 
     function displayAgain() {
       enlargeVideoButton.style.display = "block";
