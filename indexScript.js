@@ -156,10 +156,7 @@ hamburgerIcon.onclick = function () {
   function fadeIn() {
     if (opacity < 1.0) {
       opacity = opacity + 0.05;
-      console.log(opacity);
       navBarUl.style.opacity = opacity;
-      console.log(navBarUl.style.opacity);
-      console.log("continue...");
       setTimeout(fadeIn, 25);
     } else {
       navBarUl.style.opacity = "1";

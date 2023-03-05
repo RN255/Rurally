@@ -189,6 +189,13 @@ body {
   position: absolute;
   left: 36vw;
   bottom: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#enlargeVideoButton:hover {
+  border: solid 1px #ffffff;
+  color: #ffffff;
 }
 
 #shrinkVideoButton {
@@ -199,7 +206,14 @@ body {
   left: 45vw;
   bottom: 8vh;
   display: none;
+  cursor: pointer;
   z-index: 2;
+  transition: 0.25s;
+}
+
+#shrinkVideoButton:hover {
+  border: solid 1px #ffffff;
+  color: #ffffff;
 }
 
 #greyCircle {
@@ -435,10 +449,50 @@ body {
   background-position: 100% 100%;
 }
 
+/* find out banner section  */
+
+#findOutBanner {
+  text-decoration: none;
+}
+
+#findOutBanner div {
+  margin: 150px 0 0;
+  padding: 75px 0;
+  background: linear-gradient(to right, #196d6b, #35c1be, #196d6b);
+}
+
+#findOutBanner h2 {
+  color: #ffffff;
+  width: fit-content;
+  margin: auto;
+  transition: 0.3s;
+  font-size: 28px;
+  padding-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+#findOutBanner img {
+  height: 28px;
+  padding-left: 15px;
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+}
+
+#findOutBanner:hover h2 {
+  letter-spacing: 0.5px;
+}
+
+#findOutBanner:hover img {
+  opacity: 1;
+}
+
 /* works section */
 
 #works {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 #worksTitle {
@@ -939,7 +993,7 @@ body {
 #floatingButton {
   position: fixed;
   bottom: 2vh;
-  right: 1vw;
+  right: 2vw;
   background-image: linear-gradient(to right, #35c1be, #196d6b);
   border-radius: 25px;
 }
