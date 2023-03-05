@@ -106,9 +106,9 @@ buttonLeftTwo.onclick = function () {
   sliderTwo.scrollLeft -= 600;
 };
 
-// mobile menu stuffs
+// mobile menu
 
-// get icons to be pressed
+// get icons variable
 const hamburgerIcon = document.getElementById("hamburgerIcon");
 const closeIcon = document.getElementById("closeIcon");
 
@@ -148,6 +148,23 @@ hamburgerIcon.onclick = function () {
   navBarUl.style.top = "15vh";
   navBarUl.style.cursor = "default";
   navBarUl.style.display = "unset";
+
+  // fade in menu items using js
+  var opacity = 0;
+  fadeIn();
+
+  function fadeIn() {
+    if (opacity < 1.0) {
+      opacity = opacity + 0.05;
+      console.log(opacity);
+      navBarUl.style.opacity = opacity;
+      console.log(navBarUl.style.opacity);
+      console.log("continue...");
+      setTimeout(fadeIn, 25);
+    } else {
+      navBarUl.style.opacity = "1";
+    }
+  }
 
   // change #navBarLiItem
   navBarLiItem.forEach((navBarLiItem) => {

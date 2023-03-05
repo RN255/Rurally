@@ -21,6 +21,7 @@ body {
   width: 100%;
   height: 50px;
   z-index: 10;
+  transition: 0.5s;
 }
 
 #logo {
@@ -47,7 +48,7 @@ body {
   text-decoration: none;
 }
 
-#navBar ul {
+#navBarUl {
   position: relative;
   margin: 15px 5% 0 0;
   padding: unset;
@@ -1032,8 +1033,13 @@ body {
   /* nav bar  */
   /* navbar will be hidden  */
 
+  /* #navbar {
+    opacity: 0;
+  } */
+
   #navBarUl {
     display: none;
+    opacity: 0;
   }
 
   /* this is all we will display  */
