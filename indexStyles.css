@@ -1228,6 +1228,19 @@ body {
     display: none;
   }
 
+  /* find out banner section  */
+
+  #findOutBanner h2 {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 0px;
+  }
+
+  #findOutBanner img {
+    height: 18px;
+  }
+
   /* works section  */
 
   #works {
