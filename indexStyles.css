@@ -50,7 +50,7 @@ body {
 
 #navBarUl {
   position: relative;
-  margin: 15px 5% 0 0;
+  margin: 0px 5% 0 0;
   padding: unset;
   width: unset;
   top: unset;
@@ -61,21 +61,46 @@ body {
 .navBarLiItem {
   text-transform: uppercase;
   display: inline-block;
-  margin: 0 20px;
+  /* padding: 15px 20px; */
   font-size: unset;
   text-align: unset;
 }
 
 #navBar ul li a {
+  /* background-color: #0087b4; */
+  padding: 15px 20px;
+  display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #000000;
+  /* color: #35c1be; */
   transition: 0.25s;
+  position: relative;
 }
 
-#navBar ul li a:hover {
-  text-decoration: none;
-  color: #00000075;
-  transition: 0.25s;
+/* a choice of animations below...  */
+
+/* #navBar ul li a:hover {
+  background-color: #d3d3d350;
+} */
+
+/* #navBar ul li a:hover {
+  color: #00000050;
+} */
+
+#navBar ul li a::after {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  margin: 0 20px;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #35c1be;
+  transition: 0.5s;
+}
+
+#navBar ul li a:hover::after {
+  width: calc(100% - 40px);
 }
 
 #navBar ul li button {
