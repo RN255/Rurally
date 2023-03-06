@@ -217,49 +217,41 @@ const shrinkVideoButton = document.getElementById("shrinkVideoButton");
 const firstVideo = document.getElementById("firstVideo");
 
 enlargeVideoButton.onclick = function () {
-  firstVideo.style.opacity = "0";
+  firstVideo.style.display = "none";
 
-  setTimeout(changeLocation, 250);
+  firstVideo.style.position = "fixed";
+  firstVideo.style.left = "50%";
+  firstVideo.style.zIndex = "1";
 
-  function changeLocation() {
-    firstVideo.style.position = "fixed";
-    firstVideo.style.left = "50%";
-    firstVideo.style.zIndex = "1";
+  firstVideo.style.top = "50%";
+  firstVideo.style.transform = "translate(-50%, -50%)";
 
-    firstVideo.style.top = "50%";
-    firstVideo.style.transform = "translate(-50%, -50%)";
+  enlargeVideoButton.style.display = "none";
 
-    enlargeVideoButton.style.display = "none";
+  setTimeout(displayAgain, 250);
 
-    setTimeout(displayAgain, 250);
-
-    function displayAgain() {
-      firstVideo.style.opacity = "1";
-      shrinkVideoButton.style.display = "block";
-    }
+  function displayAgain() {
+    firstVideo.style.display = "block";
+    shrinkVideoButton.style.display = "block";
   }
 };
 
 shrinkVideoButton.onclick = function () {
-  firstVideo.style.opacity = "0";
+  firstVideo.style.display = "none";
 
-  setTimeout(changeLocation, 250);
+  firstVideo.style.position = "absolute";
+  firstVideo.style.left = "35vw";
+  firstVideo.style.zIndex = "-1";
 
-  function changeLocation() {
-    firstVideo.style.position = "absolute";
-    firstVideo.style.left = "35vw";
-    firstVideo.style.zIndex = "-1";
+  firstVideo.style.top = "unset";
+  firstVideo.style.transform = "unset";
 
-    firstVideo.style.top = "unset";
-    firstVideo.style.transform = "unset";
+  shrinkVideoButton.style.display = "none";
 
-    shrinkVideoButton.style.display = "none";
+  setTimeout(displayAgain, 250);
 
-    setTimeout(displayAgain, 250);
-
-    function displayAgain() {
-      enlargeVideoButton.style.display = "block";
-      firstVideo.style.opacity = "1";
-    }
+  function displayAgain() {
+    enlargeVideoButton.style.display = "block";
+    firstVideo.style.display = "block";
   }
 };

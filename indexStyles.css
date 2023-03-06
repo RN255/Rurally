@@ -211,26 +211,24 @@ body {
   left: 35vw;
 
   top: unset;
-  transform: unset;
+  /* transform: unset; */
   display: block;
 
   height: 90vh;
   object-fit: contain;
-  transition: 0.25s;
-  opacity: 1;
-
+  /* transition: 0.25s; */
   animation: video-load 1s ease-out 0.25s;
-  transform: translateX(100%);
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 
 @keyframes video-load {
   0% {
-    transform: translateX(100%);
+    opacity: 0;
   }
 
   100% {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -243,6 +241,7 @@ body {
   bottom: 10px;
   cursor: pointer;
   transition: 0.25s;
+  z-index: 2;
 }
 
 #enlargeVideoButton:hover {
