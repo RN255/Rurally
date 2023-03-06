@@ -22,6 +22,19 @@ body {
   height: 50px;
   z-index: 10;
   transition: 0.5s;
+  animation: nav-load 0.5s 1s;
+  transform: translateY(-100%);
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #logo {
@@ -205,6 +218,20 @@ body {
   object-fit: contain;
   transition: 0.25s;
   opacity: 1;
+
+  animation: video-load 1s ease-out 0.25s;
+  transform: translateX(100%);
+  animation-fill-mode: forwards;
+}
+
+@keyframes video-load {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #enlargeVideoButton {
@@ -250,10 +277,38 @@ body {
   border-radius: 50%;
   left: -150px;
   top: -150px;
+  animation: grey-circle-load 0.5s;
+  transform: translateY(-100%);
+  animation-fill-mode: forwards;
+}
+
+@keyframes grey-circle-load {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 #textSectOne {
   margin: 100px 0 0 100px;
+  animation: text-sect-one-load 0.5s 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-sect-one-load {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #textSectOne h1 {
@@ -278,6 +333,19 @@ body {
   position: relative;
   overflow: hidden;
   height: 90vh;
+  animation: sect-two-load 0.5s 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sect-two-load {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #blackCircle {
@@ -1119,6 +1187,10 @@ body {
   #navBarUl {
     display: none;
     opacity: 0;
+  }
+
+  #navBar ul li a {
+    padding: 5px 20px;
   }
 
   /* this is all we will display  */
