@@ -760,6 +760,7 @@ body {
   background-image: url("images/pexels-danny-meneses-943096.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: top;
 }
 
 /* news and topics section */
@@ -1449,6 +1450,36 @@ body {
 
   .worksSlideDescription p {
     font-size: 14px;
+  }
+
+  /* fixed background section  */
+
+  #fixedBackground h2,
+  #fixedBackground2 h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30% 0 0 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  #fixedBackground p,
+  #fixedBackground2 p {
+    color: #ffffff;
+    padding: 10px 0 0 0;
+    width: 90%;
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  #fixedBackground button,
+  #fixedBackground2 button {
+    margin: 25px auto;
+    width: 300px;
+    padding: 20px;
+    display: block;
   }
 
   /* news section  */
