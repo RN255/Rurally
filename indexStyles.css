@@ -585,7 +585,7 @@ body {
 /* works section */
 
 #works {
-  margin-top: 150px;
+  margin: 150px 0 200px;
 }
 
 #worksTitle {
@@ -697,6 +697,69 @@ body {
 .workSlideViewMore a {
   text-decoration: none;
   color: #35c1be;
+}
+
+/* fixed background section  */
+
+#fixedBackground {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-image: url("images/pexels-anna-b-13680374.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#fixedBackground h2,
+#fixedBackground2 h2 {
+  color: #ffffff;
+  padding: 10% 0 0 10%;
+  font-size: 40px;
+}
+
+#fixedBackground p,
+#fixedBackground2 p {
+  color: #ffffff;
+  padding: 10px 0 0 10%;
+  width: 700px;
+  font-size: 24px;
+  line-height: 2rem;
+}
+
+#fixedBackground button,
+#fixedBackground2 button {
+  margin-top: 25px;
+  margin-left: 10%;
+  width: 300px;
+  padding: 20px;
+  border: 2px #ffffff solid;
+  color: #ffffff;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(transparent 50%, #35c1be 50%);
+  background-size: 100% 200%;
+  background-position: -100% 200%;
+  transition: 0.3s;
+}
+
+#fixedBackground button:hover,
+#fixedBackground2 button:hover {
+  color: #ffffff;
+  background-position: 100% 100%;
+  border: 2px #35c1be solid;
+}
+
+#fixedBackground2 {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("images/pexels-danny-meneses-943096.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* news and topics section */
