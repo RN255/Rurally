@@ -715,6 +715,29 @@ body {
   color: #ffffff;
   padding: 10% 0 0 10%;
   font-size: 40px;
+  display: block;
+}
+
+#fixedBackground .reveal, #fixedBackground2 .reveal {
+  opacity: 0;
+}
+
+#fixedBackground .active, #fixedBackground2 .active {
+  animation: reveal-animation 1s 0s;
+  transform: translateX(-75px);
+  animation-fill-mode: forwards;
+}
+
+@keyframes reveal-animation {
+  0% {
+    transform: translateX(-75px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 #fixedBackground p,

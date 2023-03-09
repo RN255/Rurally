@@ -255,3 +255,21 @@ shrinkVideoButton.onclick = function () {
     firstVideo.style.display = "block";
   }
 };
+
+// reveal certain elements on scroll
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var itemsToReveal = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < itemsToReveal.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = itemsToReveal[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      itemsToReveal[i].classList.add("active");
+    }
+  }
+}
